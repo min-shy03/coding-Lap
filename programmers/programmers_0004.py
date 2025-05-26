@@ -1,3 +1,5 @@
+# 팩토리얼
+
 def solution(n):
     i = 1
     answer = 1
