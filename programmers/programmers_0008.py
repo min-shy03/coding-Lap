@@ -38,4 +38,11 @@ def solution(numbers):
                 
     return answer
 
-print(solution([1,2,-3,4,-5]))
+# 더 쉽고 빠르게 푸는 방법
+# sort 함수를 이용해 맨 앞 두수와 맨 뒤 두수를 곱해 더 큰걸 출력하면 된다.
+# 알고리즘 능력을 길러보자..
+def solution2(numbers) :
+    numbers = sorted(numbers)
+    return max(numbers[0] * numbers[1], numbers[-1] * numbers[-2])
+
+print(solution2([10, 20, 30, 5, 5, 20, 5]))
