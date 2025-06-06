@@ -15,4 +15,6 @@ def solution(id_pw, db):
     else : 
         return "fail"
 
+# 딕셔너리 혹은 for 문을 써서 깔끔하게 풀 수 있다 나중에 다시 한 번 풀어서 복습하기
+
 print(solution(["meosseugi", "1234"],	[["rardss", "123"], ["yyoom", "1234"], ["meosseugi", "1234"]]))
