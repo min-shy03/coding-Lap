@@ -1,7 +1,7 @@
 # 삼총사
 
 def solution(number): 
-    lst = []
+    answer = 0
     
     while len(number) > 2 :
         x = number.pop(0)
@@ -11,10 +11,11 @@ def solution(number):
         for count in range(len(number)-1, 0,-1) :
             idx_2 = 1
             for i in range(count) :
-                lst.append((x,number[idx_1],number[idx_1+idx_2]))
+                if x + number[idx_1] + number[idx_1+idx_2] == 0 :
+                    answer += 1 
                 idx_2 += 1
             idx_1 += 1
             
-    return len([i for i in lst if sum(i) == 0])
+    return answer
 
 print(solution([0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]))
