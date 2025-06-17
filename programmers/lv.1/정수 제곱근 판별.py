@@ -1,4 +1,4 @@
-# 정수의 제곱근 판별
+# 정수 제곱근 판별
 def solution(n):
     root = n ** 0.5
     # is_integer()는 float 타입 수에만 사용 가능 정수형에다 쓰면 안됨

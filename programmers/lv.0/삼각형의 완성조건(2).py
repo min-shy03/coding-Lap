@@ -1,3 +1,5 @@
+# 삼각형의 완성조건(2)
+
 def solution(sides):
     a = max(sides)
     b = min(sides)
