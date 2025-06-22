@@ -1,3 +1,5 @@
+# 진법 변환 2
+
 lst = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 n , b = map(int,input().split())

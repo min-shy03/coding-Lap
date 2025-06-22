@@ -1,3 +1,5 @@
+# 벌집
+
 n = int(input())
 
 num = 1

@@ -1,3 +1,5 @@
+# 중앙이동 알고리즘
+
 n = 2
 
 count = int(input())

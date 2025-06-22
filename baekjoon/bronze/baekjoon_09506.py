@@ -1,4 +1,4 @@
-# 약수들의 합으로 완전수 찾기
+# 약수들의 합
 
 while True :
     n= int(input())
