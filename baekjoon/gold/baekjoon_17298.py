@@ -28,3 +28,29 @@ answer = sorted(answer, key=lambda x : x[1])
 answer = [i[0] for i in answer]
 
 print(*answer)
+
+# ================================================
+# 재풀이 코드
+
+n = int(input())
+lst = list(map(int, input().split()))
+
+
+stack = []
+
+answer = [0] * n
+
+for i,v in enumerate(lst) :
+    if not stack or stack[-1][1] > v :
+        stack.append((i,v))
+    else :
+        while stack and stack[-1][1] < v :
+            answer[stack[-1][0]] = v
+            stack.pop()
+            
+        stack.append((i,v))
+
+for i in stack :
+    answer[i[0]] = -1
+
+print(*answer)
